@@ -218,26 +218,38 @@ const Header: React.FC = () => {
               <MobileHeaderLink key={index} item={item} />
             ))}
             <div className="mt-4 flex flex-col space-y-4 w-full">
-              <Link
-                href="#"
-                className="bg-transparent border border-primary text-primary px-4 py-2 rounded-lg hover:bg-blue-600 hover:text-white"
-                onClick={() => {
-                  setIsSignInOpen(true);
-                  setNavbarOpen(false);
-                }}
-              >
-                Sign In
-              </Link>
-              <Link
-                href="#"
-                className="bg-primary text-white px-4 py-2 rounded-lg hover:bg-blue-700"
-                onClick={() => {
-                  setIsSignUpOpen(true);
-                  setNavbarOpen(false);
-                }}
-              >
-                Sign Up
-              </Link>
+              
+              <a
+  href="https://pancakeswap.finance/swap"
+  target="_blank"
+  rel="noopener noreferrer"
+  className=" lg:block bg-transparent text-primary border hover:bg-primary border-primary hover:text-darkmode px-4 py-2 rounded-lg"
+>
+  <div style={{ display: 'flex', alignItems: 'center' }}>
+    <Image
+      src={`${getImagePrefix()}images/logo/pancakeswap-logo.png`}
+      alt="PancakeSwap Logo"
+      width={20}
+      height={20}
+    />
+    <span style={{ marginLeft: '8px' }}>PancakeSwap</span>
+  </div>
+</a>
+
+<a
+  href="https://www.coingecko.com/"
+  target="_blank"
+  rel="noopener noreferrer"
+  className=" lg:block bg-primary text-darkmode hover:bg-transparent hover:text-primary border border-primary px-4 py-2 rounded-lg"
+>
+  {/* Sell Crypto */}
+  <Image
+    src={`${getImagePrefix()}images/logo/coingeco.png`}
+    alt="CoinGecko"
+    width={100}
+    height={1}
+  />
+</a>
             </div>
           </nav>
         </div>
