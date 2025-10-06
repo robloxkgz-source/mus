@@ -18,7 +18,7 @@ export const headerData: HeaderItem[] = [
   },
   {
     label: "Twitter(X)",
-    href: "https://twitter.com/yourprofile",
+    href: "https://x.com/usman32642?t=G0ukWQ22sQXyqYI5118wkQ&s=09",
     icon: <FaTwitter />,
     external: true,
   },
